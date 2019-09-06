@@ -1,0 +1,18 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/mystyle.css') }}">
+<title>Hello from Flask</title>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+  <div>
+    <p>
+      Greetings and salutations,
+      Where would you like to go?
+    </p>
+  </div>
+  <div>
+    <a href="https://www.google.com">Search to the east!</a>
+  </div>
+  
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
